@@ -1,0 +1,36 @@
+class employee{
+	String name,address;
+	int year,salary;
+	public employee(String x,int y,int z,String a ){
+		name=x;
+		year=y;
+		salary=z;
+		address=a;
+	}
+	String getname() {
+		return name;
+	}
+	int getyear() {
+		return year;
+	}
+	int getsalary() {
+		return salary;
+	}
+	String getaddress() {
+		return address;
+	}
+}
+
+public class employeedata {
+
+	public static void main(String[] args) {
+		employee e1 = new employee("robert",1994,20000,"64cwallstreet");
+		employee e2 = new employee("sam",2000,15000,"68dwallstreet");
+		employee e3 = new employee("john",1999,16000,"26bwallstreet");
+		System.out.println("Name\t year of joining\t address");
+		System.out.println(e1.getname()+"\t"+ e1.getyear()+"\t"+e1.getaddress());
+		System.out.println(e2.getname()+"\t"+e2.getyear()+"\t"+e2.getaddress());
+		System.out.println(e3.getname()+"\t"+e3.getyear()+"\t"+e3.getaddress());
+		
+
+	}
